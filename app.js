@@ -7,6 +7,11 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+<<<<<<< HEAD
+=======
+const FAST2SMS_API_KEY = process.env.FAST2SMS_API_KEY || '';
+const MONGO_URI = process.env.MONGO_URI;
+>>>>>>> 43f26ff20e0fc75f4f65af4ecc22931c00db5207
 
 // Models
 const User = require('./models/User');
