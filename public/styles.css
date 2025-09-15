@@ -1,0 +1,13 @@
+body { font-family: Arial, Helvetica, sans-serif; margin: 20px; color: #222; }
+.container { max-width: 900px; margin: 0 auto; }
+header h1 { margin: 0; }
+nav { margin-top: 8px; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+table, th, td { border: 1px solid #ddd; }
+th, td { padding: 8px; text-align: left; }
+.coupons-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.coupon-card { border: 1px solid #ddd; padding: 8px; width: 180px; text-align: center; border-radius: 6px; }
+.coupon-card img { width: 150px; height: 150px; object-fit: contain; }
+.redeem-box { max-width: 420px; margin: 60px auto; border: 1px solid #eee; padding: 20px; border-radius: 6px; text-align: center; }
+input { padding: 8px; width: calc(100% - 18px); margin-bottom: 8px; }
+button { padding: 8px 14px; cursor: pointer; }
