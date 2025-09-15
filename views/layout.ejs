@@ -1,25 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title><%= title || 'Shop QR' %></title>
-  <link rel="stylesheet" href="/public/styles.css" />
+<meta charset="UTF-8">
+<title><%= title %></title>
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1><%= shopName || 'Shop' %></h1>
-      <nav>
-        <a href="/admin">Admin</a> |
-        <a href="/admin/product/add">Add Product</a> |
-        <a href="/admin/coupons">All Coupons</a> |
-        <a href="/admin/customers">Customers</a>
-      </nav>
-      <hr/>
-    </header>
-    <main>
-      <%- body %>
-    </main>
-  </div>
+<%- body %>
 </body>
 </html>

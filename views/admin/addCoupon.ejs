@@ -1,0 +1,18 @@
+<h1>Add New Coupon</h1>
+<form action="/admin/add-coupon" method="POST">
+  <label>Coupon Code:</label>
+  <input type="text" name="code" required/>
+  
+  <label>Points:</label>
+  <input type="number" name="points" required/>
+  
+  <label>Product:</label>
+  <select name="productId" required>
+    <% products.forEach(product => { %>
+      <option value="<%= product._id %>"><%= product.name %></option>
+    <% }) %>
+  </select>
+  
+  <button type="submit">Add Coupon</button>
+</form>
+<a href="/admin">Back to Dashboard</a>

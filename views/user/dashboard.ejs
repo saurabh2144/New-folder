@@ -1,0 +1,21 @@
+<h1>Welcome, <%= user.username %></h1>
+<p>Total Points: <%= user.points %></p>
+
+<h2>Available Coupons</h2>
+<ul>
+  <% if(coupons && coupons.length>0){ %>
+    <% coupons.forEach(coupon => { %>
+      <li>
+        <strong><%= coupon.code %></strong> - <%= coupon.points %> points - 
+        <%= coupon.isRedeemed ? 'Redeemed' : 'Available' %>
+        <% if(!coupon.isRedeemed){ %>
+          <form style="display:inline;" action="/redeem/<%= coupon._id %>" method="POST">
+            <button type="submit">Redeem</button>
+          </form>
+        <% } %>
+      </li>
+    <% }) %>
+  <% } else { %>
+    <li>No coupons available</li>
+  <% } %>
+</ul>
