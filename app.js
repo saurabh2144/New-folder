@@ -9,7 +9,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const FAST2SMS_API_KEY = process.env.FAST2SMS_API_KEY || '';
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/coupons';
+const MONGO_URI = process.env.MONGO_URI;
 
 // MongoDB models
 const Coupon = require('./models/Coupon');
